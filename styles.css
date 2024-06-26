@@ -1,0 +1,119 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150vh;
+}
+
+.container {
+    width: 80%;
+    max-width: 2000px;
+    text-align: center;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: all 0.5s ease-in-out;
+}
+
+header {
+    background: #e74c3c;
+    color: #fff;
+    padding: 10px;
+    padding-top: 10px;
+    border-radius: 10px 10px 0 0;
+    margin: 20px;
+}
+
+header h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 50px;
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.intro {
+    background: #f5b7b1;
+    padding: 20px,20px,20px, 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 60%;
+    align-content: center;
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity 2s ease-in-out, transform 2s ease-in-out;
+}
+
+.intro.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.awareness, .facts, .actions {
+    margin: 20px 0;
+}
+
+button {
+    background: #e74c3c;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background: #c0392b;
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+.facts ul, .actions ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.facts li, .actions li {
+    background: #e74c3c;
+    color: #fff;
+    padding: 10px 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 60%;
+    align-content: center;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.facts li.visible, .actions li.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+footer {
+    background: #e74c3c;
+    color: #fff;
+    padding: 10px;
+    border-radius: 0 0 10px 10px;
+}
